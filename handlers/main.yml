@@ -1,6 +1,6 @@
 ---
 # handlers file for nfs
 - name: restart NFS
-  service:
-    name=nfs-server.service
-    state=restarted
+  ansible.builtin.service:
+    name: nfs-server.service
+    state: restarted
